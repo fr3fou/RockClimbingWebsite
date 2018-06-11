@@ -1,0 +1,245 @@
+﻿<!DOCTYPE HTML>
+<html lang="bg">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" >
+
+    <style>
+        #Video
+        {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+        }
+        .navbar
+        {
+            position: fixed;
+            right: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: #f1f1f1;
+            width: 100%;
+            padding: 10px;
+        }
+        #climbing
+         {
+            width: 13%;
+            font-size: 18px;
+            padding: 10px;
+            border: none;
+            background: transparent;
+            color: white;
+            cursor: pointer;
+         }
+        #climbing:hover
+        {
+            background-color: red;
+        }
+        #types
+        {
+
+            font-size: 18px;
+            padding: 10px;
+            border: none;
+            background: transparent;
+            color: white;
+            cursor: pointer;
+        }
+        #types:hover
+        {
+            background-color: red;
+        }
+        .dropdown
+        {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown:hover
+        {
+            background-color: red;
+        }
+        .dropdown-content
+        {
+            display: none;
+            position: fixed;
+            background-color: rgba(0, 0, 0, 0.5);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a
+        {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover
+        {
+            background-color: red;
+        }
+        .dropdown:hover .dropdown-content
+        {
+            display: block;
+        }
+
+        #еquipment
+        {
+            font-size: 18px;
+            padding: 10px;
+            border: none;
+            background: transparent;
+            color: white;
+            cursor: pointer;
+        }
+        #еquipment:hover
+        {
+            background-color: red;
+        }
+        .dropdown2
+        {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown2:hover
+        {
+            background-color: red;
+        }
+        .dropdown-content2
+        {
+            display: none;
+            position: fixed;
+            background-color: rgba(0, 0, 0, 0.5);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content2 a
+        {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content2 a:hover
+        {
+            background-color: red;
+        }
+        .dropdown2:hover .dropdown-content2
+        {
+            display: block;
+        }
+
+        #belay
+        {
+            width: 25%;
+            font-size: 18px;
+            padding: 10px;
+            border: none;
+            background: transparent;
+            color: white;
+            cursor: pointer;
+        }
+        #belay:hover
+        {
+            background-color: red;
+        }
+        .dropdown3
+        {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown3:hover
+        {
+            background-color: red;
+        }
+        .dropdown-content3
+        {
+            display: none;
+            position: fixed;
+            background-color: rgba(0, 0, 0, 0.5);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content3 a
+        {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content3 a:hover
+        {
+            background-color: red;
+        }
+        .dropdown3:hover .dropdown-content3
+        {
+            display: block;
+        }
+
+        body
+        {
+            margin: 0;
+            font-family: Arial;
+            font-size: 17px;
+        }
+
+        a:link
+        {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:visited
+        {
+            color: white;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+    </style>
+
+    <title>Катерене</title>
+</head>
+<body>
+
+<video autoplay loop id="Video">
+    <source src="pictures/video.mp4" type="video/mp4">
+</video>
+
+<div class = "navbar" >
+    <button id=climbing><a href="files/katerene.html">За катеренето</a></button>
+
+    <div class = "dropdown">
+        <button id ="types">Стилове</button>
+        <div class="dropdown-content">
+            <a href="files/sport.html">Спортно</a>
+            <a href="files/boulder.html">Боулдър</a>
+        </div>
+    </div>
+
+    <div class = "dropdown2">
+        <button id ="еquipment">Екипировка</button>
+        <div class="dropdown-content2">
+            <a href="files/sedalka.html">Седалка</a>
+            <a href="files/obuvki.html">Еспадрили</a>
+            <a href="files/torbichka.html">Торбичка за магнезий</a>
+            <a href="files/kaska.html">Каска</a>
+            <a href="files/reverso.html">Реверсо</a>
+            <a href="files/grigri.html">Григри</a>
+        </div>
+    </div>
+
+    <div class = "dropdown3">
+        <button id ="belay">Осигуряване</button>
+        <div class="dropdown-content3">
+            <a href="files/normal.html">Нормално осигуряване</a>
+            <a href="files/lead.html">Водещо осигуряване</a>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
